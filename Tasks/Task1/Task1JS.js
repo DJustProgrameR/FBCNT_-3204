@@ -1,6 +1,7 @@
 function DisplayPlot(){
     var particle_charge_amount = document.getElementById("particle_charge_amount").value;
     var particle_charge_sign= document.getElementById("particle_charge_sign").value;
+    var particle_mass= document.getElementById("particle_mass").value;
     var particle_speed= document.getElementById("particle_speed").value;
     var angle= document.getElementById("angle").value;
     var magnetic_induction= document.getElementById("magnetic_induction").value;
@@ -11,7 +12,7 @@ function DisplayPlot(){
     } else {
         particle_charge_coef = -1;
     }
-    var radius = particle_speed/(particle_charge_amount * Math.cos(angle * Math.PI / 180) * magnetic_induction);
+    var radius = (particle_mass*particle_speed)/(particle_charge_amount * Math.cos(angle * Math.PI / 180) * magnetic_induction);
     var Z_axis_dist_delta = particle_speed * Math.sin(angle * Math.PI / 180) * ((1/30)/(particle_speed * Math.cos(angle * Math.PI / 180) / radius));
 
     var pointCount = 600;
