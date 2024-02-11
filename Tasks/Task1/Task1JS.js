@@ -41,5 +41,6 @@ function DisplayPlot(){
             color: c,
             colorscale: 'Viridis'}
     }]);
+    return false;
 }
 
