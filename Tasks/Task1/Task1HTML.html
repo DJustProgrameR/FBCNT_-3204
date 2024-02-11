@@ -5,19 +5,18 @@
     <script src="../../thirdparty/plotly.min.js"></script>
 </head>
 <body>
+    <label>Величина заряда</label>
+    <input id = "particle_charge_amount"><br><br>
+    <label>Знак заряда</label>
+    <input id = "particle_charge_sign"><br><br>
+    <label>Скорость заряда</label>
+    <input id = "particle_speed"><br><br>
+    <label>Угол между ветором скорости и вектором индукции</label>
+    <input placeholder="0-180" id = "angle"><br><br>
+    <label>Величина индукции</label>
+    <input id = "magnetic_induction"><br><br>
+    <button onclick="DisplayPlot()">Готово</button>
+    
     <div id="myDiv"></div>
-    <form id = "main-form" onsubmit="return DisplayPlot(this)" method ="post">
-        <label>Величина заряда</label>
-        <input id = "particle_charge_amount"><br><br>
-        <label>Знак заряда</label>
-        <input id = "particle_charge_sign"><br><br>
-        <label>Скорость заряда</label>
-        <input id = "particle_speed"><br><br>
-        <label>Угол между ветором скорости и вектором индукции</label>
-        <input placeholder="0-180" id = "angle"><br><br>
-        <label>Величина индукции</label>
-        <input id = "magnetic_induction"><br><br>
-        <input type="submit" name="submit" value="Готово">
-    </form>
 </body>
 </html>
