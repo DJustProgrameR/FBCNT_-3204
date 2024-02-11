@@ -1,4 +1,4 @@
-function DisplayPlot(el){
+function DisplayPlot(){
     var particle_charge_amount = document.getElementById("particle_charge_amount").value;
     var particle_charge_sign= document.getElementById("particle_charge_sign").value;
     var particle_speed= document.getElementById("particle_speed").value;
@@ -41,5 +41,6 @@ function DisplayPlot(el){
             color: c,
             colorscale: 'Viridis'}
     }]);
+    return false;
 }
 
