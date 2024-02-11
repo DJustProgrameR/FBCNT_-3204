@@ -15,7 +15,7 @@ for(i = 0; i < pointCount; i++)
     c.push(i)
 }
 
-Plotly.newPlot('myDiv', [{
+Plotly.newPlot("myDiv", [{
     type: 'scatter3d',
     mode: 'lines',
     x: x,
