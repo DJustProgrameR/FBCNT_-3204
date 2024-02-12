@@ -6,17 +6,17 @@
 </head>
 <body>
     <form id = "main-form" onsubmit="return DisplayPlot(this)" method ="post">
-        <label>Величина заряда</label>
+        <label>Величина заряда(кл)</label>
         <input id = "particle_charge_amount"><br><br>
         <label>Знак заряда</label>
-        <input id = "particle_charge_sign"><br><br>
-        <label>Масса заряда</label>
+        <input placeholder ="+/-" id = "particle_charge_sign"><br><br>
+        <label>Масса заряда(кг)</label>
         <input id = "particle_mass"><br><br>
-        <label>Скорость заряда</label>
+        <label>Скорость заряда(м/c)</label>
         <input id = "particle_speed"><br><br>
-        <label>Угол между ветором скорости и вектором индукции</label>
+        <label>Угол между ветором скорости и вектором индукции(град)</label>
         <input placeholder="0-180" id = "angle"><br><br>
-        <label>Величина индукции</label>
+        <label>Величина индукции(Тл)</label>
         <input id = "magnetic_induction"><br><br>
         <input type="submit" name="submit" value="Готово">
     </form>
