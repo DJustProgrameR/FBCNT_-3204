@@ -1,6 +1,6 @@
 var mu_zero = 1.25663706212*10**(-6);
 function CoilMagneticField(distance, radius, loop_number, electric_current){
-    return (mu_zero*electric_current*(radius**2))/(2*((radius**2) + (distance**2))**(3/2));
+    return (mu_zero*loop_number*electric_current*(radius**2))/(2*((radius**2) + (distance**2))**(3/2));
 }
 function DisplayPlot(){
 
