@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+  <meta charset="UTF-8">
+  <script src="../../thirdparty/plotly.min.js"></script>
+</head>
+<body>
+<form id = "main-form" onsubmit="return DisplayPlot(this)" method ="post">
+  <label>Радиус(м)</label>
+  <input id = "radius"><br><br>
+  <label>Кол-во витков</label>
+  <input id = "loop_number"><br><br>
+  <label>Ток(А)</label>
+  <input id = "electric_current"><br><br>
+  <input type="submit" name="submit" value="Готово">
+</form>
+<div id="myDiv"></div>
+<script src="Task5JS.js"></script>
+</body>
+</html>

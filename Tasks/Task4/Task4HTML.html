@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <script src="../../thirdparty/plotly.min.js"></script>
+</head>
+<body>
+<form id = "main-form" onsubmit="return DisplayPlot(this)" method ="post">
+    <label>Площадь рамки(м^2)</label>
+    <input id = "area"><br><br>
+    <label>Магнитная индукция(Тл)</label>
+    <input id = "mag_field"><br><br>
+    <label>Частота вращения(с^-1)</label>
+    <input id = "frequency"><br><br>
+    <label>Сопротивление(Ом)</label>
+    <input id = "resistance"><br><br>
+    <label>Время(с)</label>
+    <input id = "time"><br><br>
+    <input type="submit" name="submit" value="Готово">
+</form>
+<div id="myDiv"></div>
+<script src="Task4JS.js"></script>
+</body>
+</html>
