@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <script src="../../thirdparty/plotly.min.js"></script>
+</head>
+<body>
+<form id = "main-form" onsubmit="return DisplayPlot(this)" method ="post">
+    <label>:Частота несущего колебания(Гц)</label>
+    <input id = "carrierFrequency"><br><br>
+    <label>Частота информационного сигнала(Гц)</label>
+    <input id = "infoFrequency"><br><br>
+    <label>Коэффициент модуляции</label>
+    <input id = "modulationCoef"><br><br>
+    <input type="submit" name="submit" value="Готово">
+</form>
+<div id="myDiv1"></div>
+<div id="myDiv2"></div>
+<div id="myDiv3"></div>
+<div id="myDiv4"></div>
+<script src="Task9JS.js"></script>
+</body>
+</html>
