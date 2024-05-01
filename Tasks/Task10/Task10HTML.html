@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <script src="../../thirdparty/plotly.min.js"></script>
+</head>
+<body>
+<form id = "main-form" onsubmit="return DisplayPlot(this)" method ="post">
+    <label>Длина волны(нм)</label>
+    <input id = "waveLength"><br><br>
+    <label>Показатель преломления</label>
+    <input id = "refractiveIndex"><br><br>
+    <label>Расстояние между щелями(м)</label>
+    <input id = "slitsDistance"><br><br>
+    <label>Расстояние до экрана(м)</label>
+    <input id = "displayDistance"><br><br>
+    <input type="submit" name="submit" value="Готово">
+</form>
+<div id="myDiv"></div>
+<script src="Task10JS.js"></script>
+</body>
+</html>

@@ -6,7 +6,7 @@ function DisplayPlot() {
     if (isNaN(carrierFrequency) || carrierFrequency <= 0 ||
         isNaN(infoFrequency) || infoFrequency <= 0 ||
         isNaN(modulationCoef) || modulationCoef < 0) {
-        Plotly.newPlot("myDiv1", [{name: 'Think of input'}], {title: 'Think of input'});
+        Plotly.newPlot("myDiv1", [{name: 'Think of input data'}], {title: 'Think of input data'});
         return false;
     }
 
