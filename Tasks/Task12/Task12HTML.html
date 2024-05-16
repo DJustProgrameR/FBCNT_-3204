@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <script src="../../thirdparty/plotly.min.js"></script>
+</head>
+<body>
+<form id = "main-form" onsubmit="return DisplayPlot(this)" method ="post">
+    <label>Радиус линзы(м)</label>
+    <input id = "lensRatio"><br><br>
+    <label>Показатель преломления линзы</label>
+    <input id = "lensRefInd"><br><br>
+    <label>Показатель преломления пространства между линзами</label>
+    <input id = "envRefInd"><br><br>
+    <label>Показатель преломления пластины</label>
+    <input id = "plateRefInd"><br><br>
+    <label>Длина волны(нм)</label>
+    <input id = "waveLength"><br><br>
+    <input type="submit" name="submit" value="Готово">
+</form>
+<div id="myDiv"></div>
+<script src="Task12JS.js"></script>
+</body>
+</html>
