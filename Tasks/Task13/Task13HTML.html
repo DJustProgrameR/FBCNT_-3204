@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <script src="../../thirdparty/plotly.min.js"></script>
+</head>
+<body>
+<form id = "main-form" onsubmit="return DisplayPlot(this)" method ="post">
+    <label>Кол-во щелей</label>
+    <input id = "N"><br><br>
+    <label>Размер щели(м)</label>
+    <input id = "splitWidth"><br><br>
+    <label>Период(м)</label>
+    <input id = "period"><br><br>
+    <label>Длина волны(нм)</label>
+    <input id = "waveLength"><br><br>
+    <input type="submit" name="submit" value="Готово">
+</form>
+<div id="myDiv"></div>
+<script src="Task13JS.js"></script>
+</body>
+</html>
